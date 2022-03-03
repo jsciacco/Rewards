@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image_reward"
+            android:layout_width="143dp"
+            android:layout_height="182dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="61dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/points_awarded_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/image_reward"
+            app:layout_constraintTop_toBottomOf="@+id/points_awarded_title_reward" />
+
+        <TextView
+            android:id="@+id/last_name_first_name_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:inputType="textPersonName"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/position_content_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="18dp"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/image_reward"
+            app:layout_constraintTop_toBottomOf="@+id/position_profile" />
+
+        <TextView
+            android:id="@+id/tell_us_reward"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#F8F8F8"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="none|textMultiLine"
+            android:textAlignment="viewStart"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/your_story_reward"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/your_story_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="11dp"
+            android:text="@string/your_story"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_reward" />
+
+        <TextView
+            android:id="@+id/points_awarded_title_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="69dp"
+            android:text="@string/points_awarded"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/image_reward"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/department_name_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/image_reward"
+            app:layout_constraintTop_toBottomOf="@+id/department_profile" />
+
+        <TextView
+            android:id="@+id/department_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/department"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/image_reward"
+            app:layout_constraintTop_toBottomOf="@+id/points_awarded_title_reward" />
+
+        <TextView
+            android:id="@+id/position_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/position"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/image_reward"
+            app:layout_constraintTop_toBottomOf="@+id/department_profile" />
+
+        <TextView
+            android:id="@+id/reward_points_to_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="Reward points to send:"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tell_us_reward" />
+
+        <TextView
+            android:id="@+id/Comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Comment:"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reward_points_to_send" />
+
+        <EditText
+            android:id="@+id/rewardPointsSentAmount"
+            android:layout_width="168dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="#ECE8E8"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tell_us_reward"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/rewardComment"
+            android:layout_width="0dp"
+            android:layout_height="196dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="#ECE8E8"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/add_comment"
+            android:inputType="textMultiLine"
+            android:textAlignment="viewStart"
+            android:textColorHint="@color/orange"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Comment"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
